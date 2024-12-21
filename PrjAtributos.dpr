@@ -1,3 +1,10 @@
+(******************************************************************************
+
+ Criado pelo Professor Giovani Da Cruz
+
+ https://giovanidacruz.com.br
+
+*******************************************************************************)
 program PrjAtributos;
 
 {$APPTYPE CONSOLE}
@@ -10,6 +17,7 @@ uses
   ValidacaoAttributeUnit in 'ValidacaoAttributeUnit.pas';
 
 type
+  { Classe de Exemplo }
   TMinhaClasse = class
   private
     FNome: string;
@@ -38,7 +46,8 @@ begin
       begin
         if Atributo is ValidacaoAttribute then
         begin
-          // Se o valor da propriedade estiver vazio, lança uma exceção com a mensagem do atributo
+          { Se o valor da propriedade estiver vazio,
+          lança uma exceção com a mensagem do atributo }
           if Propriedade.GetValue(Objeto).ToString = '' then
             raise Exception.Create(ValidacaoAttribute(Atributo).Mensagem);
         end;

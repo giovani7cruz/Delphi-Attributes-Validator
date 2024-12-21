@@ -1,3 +1,14 @@
+(******************************************************************************
+
+ Criado pelo Professor Giovani Da Cruz
+
+ https://giovanidacruz.com.br
+
+
+ Nesta unidade vamos colocar nossas validações personalizadas
+
+*******************************************************************************)
+
 unit ValidacaoAttributeUnit;
 
 interface
